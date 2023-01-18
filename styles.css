@@ -1,0 +1,319 @@
+.ss {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1D1D1D;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.ss .site-main {
+    width: 100%
+}
+.ss a {
+    text-decoration: none;
+    color: #1D1D1D;
+    transition: background-size .5s ease;
+    background-image: linear-gradient(180deg, transparent 0%, #cfe5f0 0);
+    background-size: 0 100%;
+    background-repeat: no-repeat
+}
+.ss a.active {
+    color: #107CB2;
+    background-image: linear-gradient(180deg, transparent 0%, #cfe5f0 0)
+}
+.ss a.active:hover {
+    color: #107CB2;
+    background-image: linear-gradient(180deg, transparent 0%, #cfe5f0 0)
+}
+.ss a:hover {
+    background-size: 100% 100%
+}
+.ss .topnav .topnavbg {
+/*    background: #fff url("../images/ssbg.png") no-repeat;
+*/
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 40px
+}
+.ss .topnav .nav {
+    display: inline-block;
+    font-size: 18px
+}
+.ss .topnav .nav .nav-item {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 20px
+}
+.ss .left {
+    box-sizing: border-box;
+    width: 43%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+/*    background: #fff url("../images/ssbg.png") no-repeat;
+*/
+    background-size: contain;
+    padding: 40px 20px 40px 60px
+}
+.ss .left .nav {
+    font-size: 24px
+}
+.ss .left .nav .nav-item {
+    position: relative;
+    display: inline-block;
+    padding-right: 50px;
+    margin-right: 50px
+}
+.ss .left .title {
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 7%
+}
+.ss .left .title .description {
+    font-size: 14px;
+    max-width: 300px;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+    line-height: 1.4
+}
+.ss .left .detail {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px
+}
+.ss .left .detail .label {
+    display: inline-block;
+    font-weight: bold;
+    width: 100px;
+    font-size: 14px
+}
+.ss .left .detail .field {
+    display: inline-block;
+    vertical-align: top
+}
+.ss .right {
+    width: 50%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    margin-left: 43%
+}
+.ss .right .article_heading {
+    padding-left: 20px;
+    margin-bottom: 50px
+}
+.ss .right .item {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px
+}
+.ss .right .item .img {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transition: all 0.5s ease
+}
+.ss .right .item h1 {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 50%;
+    margin: -16px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.ss .right .item:hover .img {
+    width: 150%;
+/*    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+*/
+    background-color: #b7d8e8;
+    background-blend-mode: multiply;
+    margin-left: -25%;
+}
+.ss .right .item:hover h1 {
+    display: inherit
+}
+.ss .right .item.project {
+    height: auto;
+/*    border: 1px solid #ddd
+*/
+}
+.ss .right .item.project img {
+    width: 100%;
+    display: block
+}
+.ss .right .item.project.half {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top
+}
+.ss .right .item.project .desc {
+/*    background: #1D1D1D;
+*/
+    padding: 20px;
+    color: #1D1D1D;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.ss .right .item.project .desc .title {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px
+}
+.ss .right .item.headline {
+    height: auto;
+    text-align: center
+}
+.ss .right .item.headline h2 {
+    font-weight: 400
+}
+.ss .right.timeline {
+    padding-left: 40px
+}
+.ss .right.timeline .line {
+    width: 1px;
+    height: 100%;
+    min-height: 900px;
+    background: #B5B7B9;
+    position: absolute
+}
+.ss .right.timeline .headline {
+    font-weight: 400;
+    margin-left: 40px;
+    font-size: 24px;
+    padding: 40px 0 20px 0
+}
+.ss .right.timeline .thing {
+    margin-left: -10px;
+    position: relative;
+    display: block;
+    padding: 30px 0 20px 0
+}
+.ss .right.timeline .thing .circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #41D0FF;
+    border-radius: 10px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top
+}
+.ss .right.timeline .thing .description {
+    width: 400px;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 20px
+}
+.ss .right.timeline .thing .description .subdescription {
+    font-size: 14px;
+    color: #95989A;
+    margin-top: 10px
+}
+.ss .right.timeline .thing .description .year {
+    font-size: 14px;
+    color: #41D0FF;
+    margin-top: 10px
+}
+.ss .far-right {
+    width: 5%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+.ss .writing {
+    width: 700px;
+    margin: 60px auto 100px
+}
+.ss .writing .article.headline {
+    font-size: 28px
+}
+.ss .writing .article.paragraph {
+    line-height: 33px;
+    font-size: 21px;
+    font-family: "Lora", Helvetica, Arial, sans-serif
+}
+.ss .writing .article.subheadline {
+    font-size: 24px
+}
+.ss .writing img {
+    width: 100%
+}
+@media (max-width: 925px) {
+    .ss .left {
+        padding: 20px;
+        width: 50%
+    }
+    .ss .right {
+        margin-left: 50%
+    }
+    .ss .right.timeline .thing .description {
+        max-width: 280px
+    }
+    .ss .far-right {
+        display: none
+    }
+}
+@media (max-width: 710px) {
+    .ss {
+        width: 100%;
+        display: block;
+        position: relative;
+        box-sizing: border-box
+    }
+    .ss .left {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0;
+        padding: 20px
+    }
+    .ss .left .title {
+        position: relative;
+        bottom: auto;
+        margin-top: 120px
+    }
+    .ss .right {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        float: left;
+        top: auto;
+        left: auto;
+        margin: 0
+    }
+    .ss .right .item {
+        width: 100%;
+        margin-bottom: 40px
+    }
+    .ss .right .item .project {
+        width: 100%
+    }
+    .ss .far-right {
+        display: none
+    }
+}
+/*# sourceMappingURL=ss.css.map */
